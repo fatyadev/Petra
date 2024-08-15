@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petra</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        .head {
+            cursor: pointer;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .head::before {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 170px;
+            background-color: peru;
+            scale: 0;
+            margin: auto;
+            transition: 1s;
+        }
+
+        .head:hover::before {
+            scale: 1;
+        }
+
+        .head::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 170px;
+            background-color: sienna;
+            scale: 0;
+            margin: auto;
+            transition: 1s;
+        }
+
+        .head:hover::after {
+            scale: 1;
+        }
+
+        .div1 {
+            display: inline-block;
+            display: flex;
+            margin: 10px;
+        }
+
+        .card {
+            height: 200px;
+            width: 160px;
+            width: 100%;
+            margin: auto;
+            border: none;
+            background-color: #DA8A51;
+            padding: 15px;
+            font-size: 30px;
+            cursor: pointer;
+            position: relative;
+            margin: 15px auto;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border: 6px solid #DA8A51;
+            transition: .4s;
+        }
+
+        .card:hover::before {
+            top: -10px;
+            bottom: -10px;
+            left: -10px;
+            right: -10px;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right,
+                    #cd853f,
+                    #cd853f 50%,
+                    #000 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all .4s ease-in-out;
+        }
+
+        h1:before {
+            content: '';
+            background: #cd853f;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all .4s ease-in-out;
+        }
+
+        h1:hover {
+            background-position: 0;
+        }
+
+        h1:hover::before {
+            width: 100%;
+        }
+
+        .img1 {
+
+            background: url(image/img1.webp) center / cover;
+            margin-left: 10px;
+            height: 200px;
+            width: 300px;
+            float: right;
+        }
+
+        .img4 {
+
+            background: url(image/img4.jpg) center / cover;
+            margin-right: 10px;
+            height: 250px;
+            width: 400px;
+            float:
+                left;
+        }
+
+        .img2 {
+            background: url(image/img2.webp) center / cover;
+            margin: 10px;
+        }
+
+        .img5 {
+            background: url(image/img5.jpeg) center / cover;
+            margin: 10px;
+        }
+
+        .img3 {
+            background: url(image/img3.webp) center / cover;
+            margin: 10px;
+        }
+
+        .footer {
+            color: saddlebrown;
+            background-color: burlywood;
+            line-height: 30px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">Petra</div>
+    <div class="div1">
+        <div class="card img2"></div>
+        <div class="card img5"></div>
+        <div class="card img3"></div>
+    </div>
+    <p><strong>Petra</strong> is an ancient city , the capital of Idumea (Edom), later the capital of the Nabataean
+        Kingdom . The Nabataeans themselves called their city Rqm (Rakmu). Situated in what is now Jordan , at an
+        altitude of over 900 m above sea level and 660 m above the surrounding terrain, in the Arava Valley , in the
+        narrow Siq canyon . <br>
+        The valley is entered through gorges located to the north and south, while to the east and west the cliffs drop
+        off steeply, forming natural walls up to 60 m high. Not far from Petra are the Ad-Deir rock temple and Aaron's
+        tomb . <br></p>
+    <hr>
+    <h1>Story</h1>
+    <p>Petra was located at the crossroads of two important trade routes : one from the Red Sea to Damascus , the other
+        from the Persian Gulf to Gaza on the Mediterranean coast . Caravans loaded with precious spices departing from
+        the Persian Gulf had to brave the harsh conditions of the Arabian Desert for weeks until they reached the cool,
+        narrow Siq canyon that led to the long-awaited Petra. There, travelers found food, shelter, and cool,
+        life-giving water. Another major Nabatean center was Hegra .
+    <div class="img1"></div>
+    For hundreds of years, trade brought great wealth to Petra. But when the Romans discovered sea routes to the East,
+    the land trade in spices died out, and Petra gradually became deserted, lost in the sands. Many of Petra's
+    structures were erected in different eras and under different rulers of the city, including the Idumeans ( 18th -
+    2nd centuries BC ), Nabataeans (2nd century BC - 106 AD ), Romans (106-395 AD ), Byzantines and Arabs . In the 12th
+    century AD, they were owned by the Crusaders .
+
+    The first modern European to see and describe Petra was the Swiss Johann Ludwig Burckhardt, who traveled incognito .
+    Next to the ancient theater, you can see a building from the Idumean or Nabatean era. There are practically no
+    monuments built after the 6th century AD, because by that time the city had already lost its significance. At the
+    end of the 20th century, Petra became the most popular attraction in Jordan . In 2007, it was chosen as one of the
+    new seven "wonders of the world" . <br>
+    Today, about half a million tourists come to Jordan every year to see Petra, whose buildings bear witness to its
+    glorious past. As tourists walk through the cool, kilometer-long Siq canyon, they turn a corner and come across Al
+    Khazneh , a majestic building with a façade carved out of a huge rock. It is one of the best-preserved structures
+    from the first century. The building is topped by a huge stone urn, which was said to contain gold and precious
+    stones, hence the name of the temple (translated from Arabic as “treasury”). The canyon gradually widens, and
+    tourists find themselves in a natural amphitheater, the sandstone walls of which are filled with caves. But the most
+    striking thing is the crypts carved out of the rocks. The colonnade and amphitheater testify to the presence of the
+    Romans in the city in the first and second centuries.
+
+    Bedouins offer tired tourists camel rides , sell souvenirs and water their herds of goats at the city springs, whose
+    waters quench the thirst of people and animals.</p>
+    <hr>
+    <h1>City of Petra</h1>
+    <p>The territory of Petra occupies a large area. From the center, where the ruins of numerous buildings, no longer
+        rocky, but built in the traditional way, from stone, are well preserved, it extends for several kilometers.
+        The main street, stretching from east to west through the entire city, was laid out during the Roman rule. On
+        both sides of it there is a majestic colonnade. The western end of the street abutted a large temple, and the
+        eastern one ended with a three-span triumphal arch.
+
+        Ad-Deir , a monastery carved into the rock on the top of a cliff, is a huge building about 50 m wide and over 45
+        m high. Judging by the crosses carved on the walls, the temple served as a Christian church for some time.
+
+        Later, after researchers excavated the area beneath the monastery, they discovered the tomb of one of the
+        Nabataean kings. <br>
+    <div class="img4"></div>
+    Having mastered the art of collecting water, the inhabitants of Petra also mastered the art of working with stone.
+    The very name "Petra" means " stone " in Greek ( Greek: πετρα ). And Petra was indeed a city of stone, the likes of
+    which were not found in the Roman Empire. The Nabataeans, who built the city, patiently carved houses, crypts and
+    temples from stone blocks. Petra was nestled among the red sandstones, which are excellent for construction, and by
+    the first century AD, a monumental city had grown up in the heart of the desert. With the help of terracotta pipes,
+    the architects of Petra created a complex water supply system and, despite the arid climate, the city's inhabitants
+    never needed water. Around 200 reservoirs were located throughout the city, collecting and storing rainwater. In
+    addition to connecting the reservoirs, terracotta pipes collected water from all sources within a radius of 25
+    kilometers.
+
+    The architects planned the construction of the famous temple-mausoleum Al-Khazneh in the former riverbed. To build
+    this structure, the riverbed was changed, a grandiose project for that time. A tunnel was cut into the rock,
+    diverting the flow of water and a series of dams were built. <br>
+    The famous rock temple - mausoleum , "Pharaoh's Treasury", as the Arabs call it. The exact purpose of the structure
+    is not fully understood. There is an assumption that it was originally a temple to the goddess Isis . In any case,
+    many features of the monument indicate that it could have been built by craftsmen familiar with the architectural
+    techniques of Alexandria, Egypt .
+
+    The huge surface of the rock was cut down. But for this it was necessary to erect scaffolding , and there are almost
+    no trees in this area. In the absence of scaffolding, it was possible, without cutting down the entire surface at
+    once, to take advantage of the unevenness of the rock and walk along it like steps. In this case, both the
+    stonemason and the carver would start from the very top, cutting out the first step, and then go lower and lower.
+    After all, it is one thing to mark out a future building and cut it out while standing on scaffolding, and quite
+    another to do the same while hanging over an abyss. <br><br><br></p>
+    <div class="footer">Designed by Fatima Ferzeli &copy 2024</div>
+</body>
+
+</html>
